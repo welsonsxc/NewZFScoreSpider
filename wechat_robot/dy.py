@@ -11,9 +11,9 @@ def login1(xh, pw):
         return "[Error]账号密码错误,请重新输入"
     # 爬取成绩数据
     try:
-        cumt_grades.post_gradedata()
+        cumt_grades.post_grade_data()
         cumt_grades.welcome()
-        cumt_grades.print_geades()
+        cumt_grades.print_grades()
     except Exception as e:
         print(e)
         return "[Error]爬取成绩错误,请联系管理员"
