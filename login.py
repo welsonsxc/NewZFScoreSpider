@@ -128,16 +128,16 @@ class Student:
 if __name__ == '__main__':
     # 输入学号密码
     # stu_name = input('请输入学号:').strip()
-    stu_name = "2017830402024"
+    stu_name = "你的学号"
     # stu_password = getpass.getpass('请输入密码(密码不回显,输入完回车即可):') .strip()
-    stu_password = "SCjiaowu287486."
+    stu_password = "你的密码"
 
     # 教务系统登录路径
-    url = "http://qjxyjw.hznu.edu.cn/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="
+    url = "http://你的学校域名或者ip地址/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="
     # 请求PublicKey的URL
-    key_url = "http://qjxyjw.hznu.edu.cn/jwglxt/xtgl/login_getPublicKey.html?time="
+    key_url = "http://你的学校域名或者ip地址/jwglxt/xtgl/login_getPublicKey.html?time="
     # 获取成绩路径
-    grade_url = "http://qjxyjw.hznu.edu.cn/jwglxt/cjcx/cjcx_cxDgXscj.html?doType=query&gnmkdm=N305005"
+    grade_url = "http://你的学校域名或者ip地址/jwglxt/cjcx/cjcx_cxDgXscj.html?doType=query&gnmkdm=N305005"
 
     # 登陆~
     temp = Student(stu_name, stu_password, url, key_url, grade_url)
