@@ -14,13 +14,13 @@ class Student:
 
     def __init__(self, name, password, login_url, key_url, grade_url):
         self.pub = None
-        self.request = None
         self.year = None
         self.term = None
         self.token = None
         self.header = None
         self.cookie = None
         self.modules = None
+        self.request = None
 
         self.name = str(name).encode("utf8").decode("utf8")
         self.password = str(password).encode("utf8").decode("utf8")
